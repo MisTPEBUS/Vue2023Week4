@@ -29,9 +29,7 @@ createApp({
         document.cookie = (this.isStoreAccount)
         ?`isStoreAccount=${this.isStoreAccount};username=${this.user.username};hexToken=${token};expires=${new Date(expired)}; path=/`
         :`hexToken=${token};expires=${new Date(expired)}; path=/`;
-     
-        
-     window.location = './products.html';
+        window.location = 'products.html';
       }).catch((err) => {
         console.log(err)
         alert(err.response.data.message);
