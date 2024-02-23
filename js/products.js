@@ -7,13 +7,13 @@ import pagination from "./components/pagination.js";
 
 
 let productModal = null;
-
+const app =
 createApp({
   components:{
     delProduct,
     alertModal,
     updateProduct,
-    pagination,
+    
   },
   data() {
     return {
@@ -132,5 +132,10 @@ createApp({
     },
   
   },
-}).mount('#app');
+})
+
+app.component('pagination',pagination);
+
+
+app.mount('#app');
 
