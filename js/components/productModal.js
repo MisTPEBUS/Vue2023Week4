@@ -1,7 +1,7 @@
 
 export default{
   /*   props:['isNew','tempProduct','updateProduct'], */
-  props:['isNew','tempProduct','updateProduct'],
+  props:['isNew','tempProduct','updateProduct','createImages'],
     data() {
       return {
         productModal : null,
@@ -14,7 +14,7 @@ export default{
     },
     methods: {      
     },
-    template:`<div  id="productModal" ref="productModal" class="modal fade" tabindex="-1" aria-labelledby="productModalLabel"
+    template:`<div id="productModal" ref="productModal" class="modal fade" tabindex="-1" aria-labelledby="productModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content border-0">
