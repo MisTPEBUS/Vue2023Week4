@@ -72,6 +72,8 @@ createApp({
         alert(err.response.data.message);
       })
     },
+
+    
     updateProduct() {
         //create Data
       this.toastMsg = '產品新增成功';
@@ -107,6 +109,7 @@ createApp({
     },
 
     createImages() {
+      
       this.tempProduct.imagesUrl = [];
       this.tempProduct.imagesUrl.push('');
     },
